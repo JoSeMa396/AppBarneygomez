@@ -37,7 +37,7 @@ export default class App extends Component {
       <ScrollView>
         <View style={{ flex: 1, backgroundColor:"#f2f2f2" }}>
           <View style={{width: width, alignItems:'center'}} >
-              <Image resizeMode="contain" style={{height:60, width:width/2, margin:10 }} source={{url:'https://tutofox.com/foodapp/foodapp.png'}} />
+              <Image resizeMode="contain" style={{height:60, width:width/2, margin:10 }} source={{url:'https://detarijalomejor.com/avisos/wp-content/uploads/2020/08/logo.jpg'}} />
               <Swiper style={{height:width/2}}  showsButtons={false} autoplay={true} autoplayTimeout={3}>
                 {
                   this.state.dataBanner.map((itemmap)=>{
