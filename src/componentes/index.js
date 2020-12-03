@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, FlatList, Image, StyleSheet, Dimensions, View, ScrollView, TextInput} from 'react-native';
+import { Text, FlatList, TouchableOpacity, Image, StyleSheet, Dimensions, View, ScrollView, TextInput} from 'react-native';
 
 var {height, width } = Dimensions.get('window');
 import Swiper from 'react-native-swiper'
@@ -9,7 +9,9 @@ export default class App extends Component {
   {
     super(props);
     this.state = {
-      dataBanner:[]
+      dataBanner:[],
+      dataCategories:[],
+      selectCatg:0
     }
   }
   
@@ -21,7 +23,8 @@ export default class App extends Component {
     .then((responseJson)=>{
       this.setState({
         isLoading: false,
-        dataBanner: responseJson.banner
+        dataBanner: responseJson.banner,
+        dataCategories: responseJson.categories
       });
     })
     .catch((error) => {
@@ -44,13 +47,38 @@ export default class App extends Component {
                   })
                 }
               </Swiper>
-              <View style={{height:20}} />
           </View>
+          <View style={{width:width, borderRadius:20, paddingVertical:20, backgroundColor: 'white'}}>
+              <Text style={styles.titleCatg}>Categorías {this.state.selectCatg}</Text>
+          <FlatList
+            horizontal={true}
+            data={this.state.dataCategories}
+            renderItem={({item})=>this._renderItem(item)}
+            keyExtractor = {(item, index)=>index.toString()}
+          />
+          </View>
+         
           <Text>App Barney Gomez</Text>
-          <Text>{JSON.stringify(this.state.dataBanner)}</Text>
+              <Text>{JSON.stringify(this.state.dataCategories)}</Text>  
         </View>
       </ScrollView>
     );
+  }
+
+  _renderItem(item){
+    return(
+      <TouchableOpacity 
+      onPress={()=>this.setState({selectCatg:item.id})}
+      style={[styles.divCategories,{backgroundColor:item.color}]}>
+        <Image
+          style={{width:100, height:80}}
+          resizeMode="contain"
+          source={{uri:item.image}} />
+          <Text style={{fontWeight:'bold', fontSize:22}}>
+            {item.name}
+          </Text>
+          </TouchableOpacity>
+    )
   }
 }
 
@@ -61,4 +89,17 @@ const styles = StyleSheet.create({
     borderRadius:10,
     marginHorizontal:20
   },
+  titleCatg:{
+    fontSize:30,
+    fontWeight:'bold',
+    textAlign:'center',
+    marginBottom:10
+  },
+  divCategories:{
+    backgroundColor:'red',
+    margin:5, 
+    alignItems:'center',
+    borderRadius:10,
+    padding:10
+  }
 });
