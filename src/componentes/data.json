@@ -1,0 +1,462 @@
+{
+    "banner": [
+        "https://detarijalomejor.com/avisos/wp-content/uploads/2020/08/571a9ebd-3540-4001-b355-de191779192f.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqI_xz31dElJ9wc3eYMuhecxJssX2Z_xTfoA&usqp=CAU",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4l4dZsaBjRiTnU9ngf3BGmy6MPCAT3tYUqQ&usqp=CAU"
+    ],
+
+    "categories": [
+        {
+            "id": 1,
+            "name": "Cervezas",
+            "color": "#fbc831",
+            "image": "https://www.teamcone.net/wp-content/uploads/2017/06/CORONA_12oz_NR.png"
+        },
+        {
+            "id": 2,
+            "name": "Vinos",
+            "color": "#9fd236",
+            "image": "https://assets.stickpng.com/thumbs/580b585b2edbce24c47b2779.png"
+        },
+        {
+            "id": 3,
+            "name": "Whisky",
+            "color": "orange",
+            "image": "https://winehousenigeria.com/wp-content/uploads/2018/07/jack_daniels.png"
+        },
+        {
+            "id": 4,
+            "name": "Fernet",
+            "color": "#f2f2f2",
+            "image": "https://assets.website-files.com/5d1a44995d638ffd714d21bd/5d95faeacfbd82c835ab9f77_Fernet-Branca%20750ml.png"
+        },
+        {
+            "id": 5,
+            "name": "Ron",
+            "color": "#f2f2f2",
+            "image": "https://img2.pngio.com/rum-bottle-png-transparent-rum-bottlepng-images-pluspng-rum-bottle-png-1500_2300.png"
+        },
+        {
+            "id": 6,
+            "name": "Vodka",
+            "color": "#FFA07A",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Absolut_vodka_bottle.png/1200px-Absolut_vodka_bottle.png"
+        },
+        {
+            "id": 7,
+            "name": "Tequila",
+            "color": "#00FF00",
+            "image": "https://www.nuevabotella.com.co/wp-content/uploads/2018/07/jose-cuervo-reposado-domicilio.png"
+        },
+        {
+            "id": 8,
+            "name": "Singani",
+            "color": "#008080",
+            "image": "https://vendimiacasareal.com/wp-content/uploads/2019/03/negra-300x400.png"
+        },
+        {
+            "id": 9,
+            "name": "Refrescos",
+            "color": "#808000",
+            "image": "https://www.shoprite.co.za/medias/10136669EA-20190726-Media-checkers515Wx515H?context=bWFzdGVyfGltYWdlc3w4ODA0MHxpbWFnZS9wbmd8aW1hZ2VzL2g4NS9oZDUvODg1NzQ3ODY5Mjg5NC5wbmd8YjlhNDhkNzc1ODRmNTYyYjRjNGM1ZjkyZTA2M2M1YWNhMzA4ZWZlNDA1M2VhY2EwOWRiZjAwYjU2NjRiYzc1Yw"
+        }
+    ],
+    "drinks": [
+        {
+            "name": "Huari Tradicional 250 ml",
+            "price": 7,
+            "categorie": 1,
+            "image": "https://www.tusuper.com.bo/web/images/producto-foto/77765987.png"
+        },
+        {
+            "name": "Ducal Lata 354 ml",
+            "price": 6,
+            "categorie": 1,
+            "image": "https://cdn.shopify.com/s/files/1/0286/4981/6169/products/ducal-lata-355_9a8037f4-8b50-4e39-b475-2eb302b139ab_1024x1024.png?v=1594083138"
+        },
+        {
+            "name": "Paceña Lata 354 ml",
+            "price": 8.5,
+            "categorie": 1,
+            "image": "https://jotajotafoods.com/wp-content/uploads/2020/07/CER00017.png"
+        },
+        {
+            "name": "Huari Lata 354 Cc",
+            "price": 11,
+            "categorie": 1,
+            "image": "https://www.tusuper.com.bo/web/images/producto-foto/7772106005243.png" 
+        },
+        {
+            "name": "Brahma 354 ml",
+            "price": 8,
+            "categorie": 1,
+            "image": "https://www.snsuper.com.br/wp-content/uploads/2017/09/7891149010509.png"
+        },
+        {
+            "name": "Imperial Lata x 355 ml",
+            "price": 7,
+            "categorie": 1,
+            "image": "https://www.monde-selection.com/wp-content/uploads/2019/08/_DSF0730.png"
+        },
+        {
+            "name": "Becks Lata 354 Cc",
+            "price": 8,
+            "categorie": 1,
+            "image": "https://static.wixstatic.com/media/b24a61_b09225668afb4336aa11b745e67c5374~mv2.png/v1/fill/w_281,h_560,al_c/b24a61_b09225668afb4336aa11b745e67c5374~mv2.png"
+        },
+        {
+            "name": "Paceña Ice Lata 355 Cc",
+            "price": 6,
+            "categorie": 1,
+            "image": "https://cdn.shopify.com/s/files/1/0286/4981/6169/products/ice-354ml_da536a76-0488-475a-88aa-1d95ea3ec26d_512x268.png?v=1592387671"
+        },
+        {
+            "name": "Baltica 350 ml",
+            "price": 6,
+            "categorie": 1,
+            "image": "https://www.taste-institute.com:8080/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbHlSIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fc06675b4e0ac51c86799945978228704e52b315/9018983_1594284036.8443334"
+        },
+        {
+            "name": "Corona 355 ml",
+            "price": 11,
+            "categorie": 1,
+            "image": "https://assets.stickpng.com/images/585e5e47cb11b227491c33ee.png"
+        },
+        {
+            "name": "Paceña Pilsener 300 ml",
+            "price": 9,
+            "categorie": 1,
+            "image": "https://cdn.shopify.com/s/files/1/0286/4981/6169/products/pilsener-710ml_381a0426-af18-4abb-975c-706eaf7ac3c3_grande.png?v=1603467459"
+        },
+        {
+            "name": "Aranjuez Terruño Tinto Clasico 750 ml",
+            "price": 23,
+            "categorie": 2,
+            "image": "https://www.winesofbolivia.com/wp-content/uploads/2019/05/Terru%C3%B1o-Oporto-18-Lot2.png"
+        },
+        {
+            "name": "Blanco Terruño 750 ml",
+            "price": 22,
+            "categorie": 2,
+            "image": "https://www.winesofbolivia.com/wp-content/uploads/2016/12/Terru%C3%B1o-blanco-18-Lot2.png"
+        },
+        {
+            "name": "Tinto Aranjuez Duo 750 ml",
+            "price": 40,
+            "categorie": 2,
+            "image": "https://www.tusuper.com.bo/web/images/producto-foto/7772115100014.png"
+        },
+        {
+            "name": "Aranjuez Tannat Tinto 750 ml",
+            "price": 68,
+            "categorie": 2,
+            "image": "https://www.tusuper.com.bo/web/images/producto-foto/7772115100052.png"
+        },
+        {
+            "name": "Cabernet Franc Aranjuez 750 ml",
+            "price": 68,
+            "categorie": 2,
+            "image": "https://www.tusuper.com.bo/web/images/producto-foto/7772115100113.png"
+        },
+        {
+            "name": "Tinto Tannat Origen Aranjuez 750 ml",
+            "price": 125,
+            "categorie": 2,
+            "image": "https://www.winesofbolivia.com/wp-content/uploads/2019/05/Tannat-Origen-Render-018-Cod05.png"
+        },
+        {
+            "name": "Tinto Juan Cruz Aranjuez 750 ml",
+            "price": 265,
+            "categorie": 2,
+            "image": "https://www.winesofbolivia.com/wp-content/uploads/2016/12/Juan-Cruz-2018.png"
+        },
+        {
+            "name": "Campos De Solana Oporto Dulce 700 ml",
+            "price": 29,
+            "categorie": 2,
+            "image": "https://www.camposdesolana.com/wp-content/uploads/2017/01/Botellas-780x1589-13.png"
+        },
+        {
+            "name": "Kohlberg Blanco Clásico 700 ml",
+            "price": 26,
+            "categorie": 2,
+            "image": "https://cdn.shopify.com/s/files/1/0286/4981/6169/products/kohlberg-blanco-clasico_bf7d1bae-776c-4895-8141-69a603418498_1200x628.png?v=1592387552"
+        },
+        {
+            "name": "Kohlberg Oporto 700 ml",
+            "price": 26,
+            "categorie": 2,
+            "image": "https://cdn.shopify.com/s/files/1/0286/4981/6169/products/khol-oporto_9ed12327-17f3-4928-ba3d-131cf6294080_1200x628.png?v=1592387563"
+        },
+        {
+            "name": "Kohlberg De Mesa Tinto 700 ml",
+            "price": 28,
+            "categorie": 2,
+            "image": "https://cdn.shopify.com/s/files/1/0286/4981/6169/products/khol-tinto-clasico_a28d64b6-0d8f-4606-b3d1-694fd4ef20ed_1024x1024.png?v=1592387561"
+        },
+        {
+            "name": "Johnnie Walker Blue Label Botella X 750 ml",
+            "price": 1490,
+            "categorie": 3,
+            "image": "https://img.pngio.com/buy-johnnie-walker-blue-label-blended-scotch-whisky-700ml-dan-blue-label-png-1600_2000.png"
+        },
+        {
+            "name": "Johnnie Walker 18 Años 750 ml",
+            "price": 790,
+            "categorie": 3,
+            "image": "https://www.elpasospirits.com/assets/images/whisky%20johnnie%20walker%2018%20anos%20750%20ml.png"
+        },
+        {
+            "name": "Johnnie Walker Green 750 ml",
+            "price": 600,
+            "categorie": 3,
+            "image": "https://i.pinimg.com/originals/6b/be/98/6bbe9807a1b90ab4f71d0c740f6975ce.png"
+        },
+        {
+            "name": "Johnnie Walker Gold Reserve 750 ml",
+            "price": 420,
+            "categorie": 3,
+            "image": "https://cdn.shopify.com/s/files/1/0050/2395/7103/products/jw-gold_label-945x1058_1400x.png?v=1556380487"
+        },
+        {
+            "name": "Double Black Johnnie Walker 1 lt",
+            "price": 360,
+            "categorie": 3,
+            "image": "https://www.winetoship.com/media/catalog/product/cache/1/image/650x650/9df78eab33525d08d6e5fb8d27136e95/j/o/johnnie_walker_scotch_whiskey_double_black_750ml_1.png"
+        },
+        {
+            "name": "Johnnie Walker importado black label 750cc",
+            "price": 235,
+            "categorie": 3,
+            "image": "https://img.pngio.com/johnnie-walker-black-label-sherry-edition-scotch-whisky-dan-johnnie-walker-black-label-png-1600_2000.png"
+        },
+        {
+            "name": "Johnnie Walker Red Label 1 lt",
+            "price": 145,
+            "categorie": 3,
+            "image": "https://img.pngio.com/red-label-em-png-1-png-image-red-label-png-600_600.png"
+        },
+        {
+            "name": "Old Parr 750 Cc",
+            "price": 295,
+            "categorie": 3,
+            "image": "https://www.totalwine.com/dynamic/490x/media/sys_master/twmmedia/h31/h05/13269052162078.png"
+        },
+        {
+            "name": "Vat 69 750 ml",
+            "price": 69,
+            "categorie": 3,
+            "image": "https://www.legalhomedelivery.com/wp-content/uploads/2020/03/0196W.png"
+        },
+        {
+            "name": "1882 40 750 ml",
+            "price": 55,
+            "categorie": 4,
+            "image": "https://d26lpennugtm8s.cloudfront.net/stores/812/913/products/1882-fernet-1l11-ca125fa57b7c67706b15441908587389-1024-1024.png"
+        },
+        {
+            "name": "Branca 1 lt",
+            "price": 88,
+            "categorie": 4,
+            "image": "https://assets.website-files.com/5d1a44995d638ffd714d21bd/5d95faeacfbd82c835ab9f77_Fernet-Branca%20750ml.png"
+        },
+        {
+            "name": "Branca 750 ml",
+            "price": 66,
+            "categorie": 4,
+            "image": "https://www.fernetbranca.com/wp-content/uploads/2017/06/bottle.png"
+        },
+        {
+            "name": "Branca Menta 750 ml",
+            "price": 66,
+            "categorie": 4,
+            "image": "https://www.totalwine.com/dynamic/490x/media/sys_master/twmmedia/hcd/hef/12913369317406.png"
+        },
+        {
+            "name": "Abuelo 1 lt",
+            "price": 83,
+            "categorie": 5,
+            "image": "https://www.mywinestore.it/518-large_default/ron-abuelo-anejo.jpg"
+        },
+        {
+            "name": "Abuelo 1,75 lt",
+            "price": 138,
+            "categorie": 5,
+            "image": "https://isteam.wsimg.com/ip/3b9af0a0-118e-4da5-b6ff-729dad367186/ols/740_original/:/rs=w:600,h:600"
+        },
+        {
+            "name": "Abuelo 750 ml",
+            "price": 66,
+            "categorie": 5,
+            "image": "https://res.cloudinary.com/riqra/image/upload/w_906,h_906,c_limit,q_auto,f_auto/v1519419870/Ron%20Abuelo/riqra_abuelo_rona%C3%B1ejo_612x450.png"
+        },
+        {
+            "name": "Flor De Caña 4 años 1,75 lt",
+            "price": 127,
+            "categorie": 5,
+            "image": "https://www.osborne.es/pub/media/catalog/product/cache/8d4d2075b1a30681853bef5bdc41b164/f/l/flordecana-2.png"
+        },
+        {
+            "name": "Bacardi Solera 750 ml",
+            "price": 99,
+            "categorie": 5,
+            "image": "https://cdn.shopify.com/s/files/1/0286/4981/6169/products/solera_da45cff9-f637-4a5d-abf3-520d4c235dbc_1200x628.png?v=1592387303"
+        },
+        {
+            "name": "Bacardi Añejo Carta Blanca 1L",
+            "price": 83,
+            "categorie": 5,
+            "image": "https://www.marcasmundiales.com.gt/media/k2/items/cache/8eddc4b0895231bbf7f506e7d72e890b_M.png"
+        },
+        {
+            "name": "Bacardi Añejo 1,75L",
+            "price": 138,
+            "categorie": 5,
+            "image": "https://www.nuevabotella.com.co/wp-content/uploads/2018/01/ron-bacardi-8.png"
+        },
+        {
+            "name": "Absolut 1 L",
+            "price": 160,
+            "categorie": 6,
+            "image": "https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c23f.png"
+        },
+        {
+            "name": "Absolut Citron 1 L",
+            "price": 187,
+            "categorie": 6,
+            "image": "https://img2.pngio.com/vodka-absolut-citron-1-l-absolut-citron-png-265_500.png"
+        },
+        {
+            "name": "Sky 980 ml",
+            "price": 85,
+            "categorie": 6,
+            "image": "https://img.pngio.com/home-skyy-vodka-png-297_1048.png"
+        },
+        {
+            "name": "Absolut Rasperry 1 L",
+            "price": 187,
+            "categorie": 6,
+            "image": "https://www.saq.com/media/catalog/product/1/1/11949406-1_1580629818.png?quality=80&fit=bounds&height=&width="
+        },
+        {
+            "name": "1800 Reposado 1 L",
+            "price": 165,
+            "categorie": 7,
+            "image": "https://d2j6dbq0eux0bg.cloudfront.net/images/26774379/1405971241.jpg"
+        },
+        {
+            "name": "1800 Silver 1 L",
+            "price": 165,
+            "categorie": 7,
+            "image": "https://www.kingdomliquor.com/wp-content/uploads/2014/07/1800-Silver.png"
+        },
+        {
+            "name": "Jose Cuervo Tradicional 750 ml",
+            "price": 154,
+            "categorie": 7,
+            "image": "https://www.totalwine.com/dynamic/x490,sq/media/sys_master/twmmedia/h59/h2c/11364539858974.png"
+        },
+        {
+            "name": "Jose Cuervo Especial Reposado 750 ml",
+            "price": 94,
+            "categorie": 7,
+            "image": "https://d256619kyxncpv.cloudfront.net/gui/img/2017/11/02/8/201711028_jose_cuervo_especial_reposado_original.png"
+        },
+        {
+            "name": "Jose Cuervo Especial Silver 750 ml",
+            "price": 94,
+            "categorie": 7,
+            "image": "https://www.totalwine.com/dynamic/490x/media/sys_master/twmmedia/h5a/h81/12267691048990.png"
+        },
+        {
+            "name": "Casa Real Rojo 750 ml",
+            "price": 56,
+            "categorie": 8,
+            "image": "https://www.singanirujero.com/images/products/es/t_28_rujero-clasico-1.png"
+        },
+        {
+            "name": "Casa Real Negro 750 ml",
+            "price": 78,
+            "categorie": 8,
+            "image": "https://cdn.shopify.com/s/files/1/0286/4981/6169/products/casa-real-negro_aff7753c-3b1a-45cd-85bb-cdaa7bc2398f_1200x628.png?v=1592398343"
+        },
+        {
+            "name": "Agua Tónica Mendocina 1 L",
+            "price": 6,
+            "categorie": 9,
+            "image": "https://cdn.shopify.com/s/files/1/0286/4981/6169/products/mendocina-agua-con-gas_12486a08-0b30-4eab-af67-e52854216da2_grande.png?v=1592397964"
+        },
+        {
+            "name": "Pepsi 2 L",
+            "price": 8,
+            "categorie": 9,
+            "image": "https://www.freeiconspng.com/uploads/pepsi-2ltr-bottle-png-15.png"
+        },
+        {
+            "name": "Pepsi Mega 3 L",
+            "price": 10,
+            "categorie": 9,
+            "image": "https://mullerbebidas.com.br/site/images/2017/prod-refrigerantes/pepsi-33l.png"
+        },
+        {
+            "name": "Coca Cola 2 L",
+            "price": 10,
+            "categorie": 9,
+            "image": "https://www.tiptoprestaurantes.com/content/images/thumbs/0000206_coca-cola-2-lts_480.png"
+        },
+        {
+            "name": "Coca Cola 3 L",
+            "price": 13,
+            "categorie": 9,
+            "image": "https://promissao.amigaoonline.com.br/media/catalog/product/cache/1/image/420x565/9df78eab33525d08d6e5fb8d27136e95/a/5/a51de8fcacc78d7b20319055f8f9c908df1d19.png.png"
+        },
+        {
+            "name": "Sprite 2 L",
+            "price": 10,
+            "categorie": 9,
+            "image": "https://www.freepnglogos.com/uploads/sprite-png-logo/sprite-bottle-png-logo-14.png"
+        },
+        {
+            "name": "Sprite 3 L",
+            "price": 13,
+            "categorie": 9,
+            "image": "https://purepng.com/public/uploads/large/purepng.com-spritespritesoft-drinkpetcan-14115298315721x988.png" 
+        },
+        {
+            "name": "Guaraná Antártica 2 L",
+            "price": 10,
+            "categorie": 9,
+            "image": "https://s3.amazonaws.com/guara_test_uploads/wp/wp-content/uploads/2015/04/24173116/gar_600.png"
+        },
+        {
+            "name": "Simba Piña 2L",
+            "price": 9,
+            "categorie": 9,
+            "image": "https://embol.com/wp-content/uploads/2019/01/pi%C3%B1a-SIMBA.png"
+        },
+        {
+            "name": "Mineragua Limón 2L",
+            "price": 8,
+            "categorie": 9,
+            "image": "https://embol.com/wp-content/uploads/2019/01/mineragua-b.png"
+        },
+        {
+            "name": "7UP 3L",
+            "price": 10,
+            "categorie": 9,
+            "image": "https://www.pngkey.com/png/full/298-2984420_7up-free-2-x-2-litres.png"
+        },
+        {
+            "name": "Agua Vital 2L",
+            "price": 6,
+            "categorie": 9,
+            "image": "https://www.taste-institute.com:8080/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaGlNIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--46ddd63806c2a1032976f1d4642d1e951267ec17/9018962_1592463483.7729664"
+        },
+        {
+            "name": "Aquarius 3L",
+            "price": 12,
+            "categorie": 9,
+            "image": "https://coca-colafemsa.com/wp-content/uploads/2020/02/2-41.png"
+        }
+    ]
+}

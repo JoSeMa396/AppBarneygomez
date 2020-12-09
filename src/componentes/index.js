@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Text, FlatList, TouchableOpacity, Image, StyleSheet, Dimensions, View, ScrollView, TextInput} from 'react-native';
 
+
+
 var {height, width } = Dimensions.get('window');
 import Swiper from 'react-native-swiper'
 
@@ -11,20 +13,24 @@ export default class App extends Component {
     this.state = {
       dataBanner:[],
       dataCategories:[],
+      dataDrink:[],
       selectCatg:0
     }
   }
+
   
   componentDidMount()
   {
-    const url = "http://tutofox.com/foodapp/api.json";
+    //const url = "http://tutofox.com/foodapp/api.json";
+    const url = "https://cristiansandyflores.github.io/paginaExamen/data.json";
     return fetch(url)
     .then((response) => response.json())
     .then((responseJson)=>{
       this.setState({
         isLoading: false,
         dataBanner: responseJson.banner,
-        dataCategories: responseJson.categories
+        dataCategories: responseJson.categories,
+        dataDrink: responseJson.drinks
       });
     })
     .catch((error) => {
@@ -56,13 +62,32 @@ export default class App extends Component {
             renderItem={({item})=>this._renderItem(item)}
             keyExtractor = {(item, index)=>index.toString()}
           />
-          </View>
-         
-          <Text>App Barney Gomez</Text>
-              <Text>{JSON.stringify(this.state.dataCategories)}</Text>  
+          <FlatList
+            data={this.state.dataDrink}
+            numColumns={2}
+            renderItem={({item})=>this._renderItemDrink(item)}
+            keyExtractor = {(item, index)=>index.toString()}
+          />
+          </View> 
         </View>
       </ScrollView>
     );
+  }
+
+  _renderItemDrink(item){
+    let catg = this.state.selectCatg
+    if (catg==0||item.categorie) {
+      return(
+        <TouchableOpacity style={styles.divDrink}>
+          <Image style={styles.imageDrink}
+          resizeMode="contain" source={{uri:item.image}}/>
+          <View style={{height:((width/2)-20)-90, width:((width/2)-20)-10, backgroundColor:'transparent'}}/>
+          <Text style={{fontWeight: 'bold', fontSize:22, textAlign:'center'}}>{item.name}</Text>
+          <Text>Descp Drink and Details </Text>
+      <Text style={{fontSize:20, color:'green'}}>Bs{item.price}</Text>
+        </TouchableOpacity>
+      )
+    }
   }
 
   _renderItem(item){
@@ -101,5 +126,27 @@ const styles = StyleSheet.create({
     alignItems:'center',
     borderRadius:10,
     padding:10
+  },
+  imageDrink:{
+    width:((width/2)-20)-10,
+    height:((width/2)-20)-30,
+    backgroundColor: 'transparent',
+    position:'absolute',
+    top:-45
+  },
+  divDrink:{
+    width:(width/2)-20,
+    backgroundColor: 'red',
+    padding:10,
+    borderRadius:10,
+    marginTop:55,
+    marginBottom:5,
+    marginLeft:10,
+    alignItems:'center',
+    borderWidth:1,
+    elevation:8,
+    shadowOpacity:0.3,
+    shadowRadius:50,
+    backgroundColor:'white'
   }
 });
