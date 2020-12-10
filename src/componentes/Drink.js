@@ -6,6 +6,9 @@ import { Text, FlatList, TouchableOpacity, Image, StyleSheet, Dimensions, View, 
 var {height, width } = Dimensions.get('window');
 import Swiper from 'react-native-swiper'
 
+import Icon from "react-native-vector-icons/Ionicons"
+import AsyncStorage from '@react-native-community/async-storage';
+
 export default class App extends Component {
   constructor(props)
   {
@@ -43,7 +46,7 @@ export default class App extends Component {
       <ScrollView>
         <View style={{ flex: 1, backgroundColor:"#f2f2f2" }}>
           <View style={{width: width, alignItems:'center'}} >
-              <Image resizeMode="contain" style={{height:60, width:width/2, margin:10 }} source={{url:'https://detarijalomejor.com/avisos/wp-content/uploads/2020/08/logo.jpg'}} />
+              <Image resizeMode="contain" style={{height:60, width:width/2, margin:10 }} source={{uri:'https://detarijalomejor.com/avisos/wp-content/uploads/2020/08/logo.jpg'}} />
               <Swiper style={{height:width/2}}  showsButtons={false} autoplay={true} autoplayTimeout={3}>
                 {
                   this.state.dataBanner.map((itemmap)=>{
@@ -55,7 +58,7 @@ export default class App extends Component {
               </Swiper>
           </View>
           <View style={{width:width, borderRadius:20, paddingVertical:20, backgroundColor: 'white'}}>
-              <Text style={styles.titleCatg}>Categorías {this.state.selectCatg}</Text>
+              <View style={{height:10}} />
           <FlatList
             horizontal={true}
             data={this.state.dataCategories}
@@ -76,15 +79,29 @@ export default class App extends Component {
 
   _renderItemDrink(item){
     let catg = this.state.selectCatg
-    if (catg==0||item.categorie) {
+    if (catg==0||catg==item.categorie) {
       return(
         <TouchableOpacity style={styles.divDrink}>
           <Image style={styles.imageDrink}
           resizeMode="contain" source={{uri:item.image}}/>
           <View style={{height:((width/2)-20)-90, width:((width/2)-20)-10, backgroundColor:'transparent'}}/>
           <Text style={{fontWeight: 'bold', fontSize:22, textAlign:'center'}}>{item.name}</Text>
-          <Text>Descp Drink and Details </Text>
-      <Text style={{fontSize:20, color:'green'}}>Bs{item.price}</Text>
+          <Text style={{fontSize:20, color:'green'}}>Bs{item.price}</Text>
+          <TouchableOpacity 
+            style={{width:(width/2)-40,
+            backgroundColor: "#33c37d",
+            alignItems: 'center',
+            justifyContent: 'center',
+            borderRadius:5,
+            padding:5,
+            flexDirection:'row'
+          }}
+          onPress={()=>this.onClickAddCart(item)}
+          >
+            <Text style={{fontSize:18, color:"white", fontWeight:"bold"}}>Añadir Carrito</Text>
+            <View style={{width:10}} />
+            <Icon name="ios-add-circle" size={30} color={"white"} />
+          </TouchableOpacity>
         </TouchableOpacity>
       )
     }
@@ -104,6 +121,31 @@ export default class App extends Component {
           </Text>
           </TouchableOpacity>
     )
+  }
+
+  onClickAddCart(data){
+    const itemcart = {
+      drink:data,
+      quantity:1,
+      price: data.price
+    }
+    AsyncStorage.getItem("cart").then((datacart)=>{
+
+      if(datacart!==null){
+        const cart = JSON.parse(datacart)
+        cart.push(itemcart)
+        AsyncStorage.setItem("cart", JSON.stringify(cart))
+      }
+      else{
+        const cart = []
+        cart.push(itemcart)
+        AsyncStorage.setItem("cart", JSON.stringify(cart))
+      }
+      alert("Añadido Exitosamente")
+    })
+    .catch((error)=>{
+      alert("errooor")
+    })
   }
 }
 
@@ -130,23 +172,21 @@ const styles = StyleSheet.create({
   imageDrink:{
     width:((width/2)-20)-10,
     height:((width/2)-20)-30,
-    backgroundColor: 'transparent',
+    backgroundColor:'transparent',
     position:'absolute',
     top:-45
   },
   divDrink:{
     width:(width/2)-20,
-    backgroundColor: 'red',
     padding:10,
     borderRadius:10,
     marginTop:55,
     marginBottom:5,
     marginLeft:10,
     alignItems:'center',
-    borderWidth:1,
     elevation:8,
     shadowOpacity:0.3,
     shadowRadius:50,
-    backgroundColor:'white'
+    backgroundColor:'white',
   }
 });
